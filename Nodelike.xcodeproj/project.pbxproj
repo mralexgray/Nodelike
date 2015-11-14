@@ -7,6 +7,131 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B4D215A1BF7D42100E41A1C /* nodelike.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B4D21591BF7D42100E41A1C /* nodelike.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D215F1BF7D43100E41A1C /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = B56DEFA8187DBFA700FF1D8A /* http_parser.c */; };
+		7B4D21601BF7D43100E41A1C /* fs-poll.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8117186075CD003B40D9 /* fs-poll.c */; };
+		7B4D21611BF7D43100E41A1C /* inet.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8118186075CD003B40D9 /* inet.c */; };
+		7B4D21621BF7D43100E41A1C /* async.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B811C186075CD003B40D9 /* async.c */; };
+		7B4D21631BF7D43100E41A1C /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B811E186075CD003B40D9 /* core.c */; };
+		7B4D21641BF7D43100E41A1C /* darwin-proctitle.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B811F186075CD003B40D9 /* darwin-proctitle.c */; };
+		7B4D21651BF7D43100E41A1C /* darwin.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8120186075CD003B40D9 /* darwin.c */; };
+		7B4D21661BF7D43100E41A1C /* dl.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8121186075CD003B40D9 /* dl.c */; };
+		7B4D21671BF7D43100E41A1C /* fs.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8123186075CD003B40D9 /* fs.c */; };
+		7B4D21681BF7D43100E41A1C /* fsevents.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8124186075CD003B40D9 /* fsevents.c */; };
+		7B4D21691BF7D43100E41A1C /* getaddrinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8125186075CD003B40D9 /* getaddrinfo.c */; };
+		7B4D216A1BF7D43100E41A1C /* kqueue.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8127186075CD003B40D9 /* kqueue.c */; };
+		7B4D216B1BF7D43100E41A1C /* loop-watcher.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B812C186075CD003B40D9 /* loop-watcher.c */; };
+		7B4D216C1BF7D43100E41A1C /* loop.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B812D186075CD003B40D9 /* loop.c */; };
+		7B4D216D1BF7D43100E41A1C /* pipe.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8130186075CD003B40D9 /* pipe.c */; };
+		7B4D216E1BF7D43100E41A1C /* poll.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8131186075CD003B40D9 /* poll.c */; };
+		7B4D216F1BF7D43100E41A1C /* process.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8132186075CD003B40D9 /* process.c */; };
+		7B4D21701BF7D43100E41A1C /* proctitle.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8133186075CD003B40D9 /* proctitle.c */; };
+		7B4D21711BF7D43100E41A1C /* signal.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8135186075CD003B40D9 /* signal.c */; };
+		7B4D21721BF7D43100E41A1C /* stream.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8137186075CD003B40D9 /* stream.c */; };
+		7B4D21731BF7D43100E41A1C /* tcp.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8139186075CD003B40D9 /* tcp.c */; };
+		7B4D21741BF7D43100E41A1C /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B813A186075CD003B40D9 /* thread.c */; };
+		7B4D21751BF7D43100E41A1C /* threadpool.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B813B186075CD003B40D9 /* threadpool.c */; };
+		7B4D21761BF7D43100E41A1C /* timer.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B813C186075CD003B40D9 /* timer.c */; };
+		7B4D21771BF7D43100E41A1C /* tty.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B813D186075CD003B40D9 /* tty.c */; };
+		7B4D21781BF7D43100E41A1C /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B813E186075CD003B40D9 /* udp.c */; };
+		7B4D21791BF7D43100E41A1C /* uv-common.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8140186075CD003B40D9 /* uv-common.c */; };
+		7B4D217A1BF7D43100E41A1C /* version.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8142186075CD003B40D9 /* version.c */; };
+		7B4D217B1BF7D43D00E41A1C /* NSObject+Nodelike.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A79B2A189E4F9400CC04D6 /* NSObject+Nodelike.m */; };
+		7B4D217C1BF7D43D00E41A1C /* NLAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = B52B9B9218A01D0800492856 /* NLAsync.m */; };
+		7B4D217D1BF7D43D00E41A1C /* NLContextify.m in Sources */ = {isa = PBXBuildFile; fileRef = B5A79B2D189E501200CC04D6 /* NLContextify.m */; };
+		7B4D217E1BF7D43D00E41A1C /* NLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E5F99181F07270093A6FF /* NLContext.m */; };
+		7B4D217F1BF7D43D00E41A1C /* NLNatives.m in Sources */ = {isa = PBXBuildFile; fileRef = B578842618945E9900EA1A81 /* NLNatives.m */; };
+		7B4D21801BF7D43D00E41A1C /* NLProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E5F9C181F07320093A6FF /* NLProcess.m */; };
+		7B4D21811BF7D43D00E41A1C /* NLBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E5F9F181F073D0093A6FF /* NLBinding.m */; };
+		7B4D21821BF7D43D00E41A1C /* NLFS.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E5F93181F07090093A6FF /* NLFS.m */; };
+		7B4D21831BF7D43D00E41A1C /* NLConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E5FA2181F07480093A6FF /* NLConstants.m */; };
+		7B4D21841BF7D43D00E41A1C /* NLSmalloc.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C5B248181319550091FDE8 /* NLSmalloc.m */; };
+		7B4D21851BF7D43D00E41A1C /* NLBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B578842318944F2000EA1A81 /* NLBuffer.m */; };
+		7B4D21861BF7D43D00E41A1C /* NLUV.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E5F8A181EC45A0093A6FF /* NLUV.m */; };
+		7B4D21871BF7D43D00E41A1C /* NLHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E5F90181EE3590093A6FF /* NLHandle.m */; };
+		7B4D21881BF7D43D00E41A1C /* NLTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = B59E5FA51820EF530093A6FF /* NLTimer.m */; };
+		7B4D21891BF7D43D00E41A1C /* NLStream.m in Sources */ = {isa = PBXBuildFile; fileRef = B53E6997184672F3004E4EF9 /* NLStream.m */; };
+		7B4D218A1BF7D43D00E41A1C /* NLTCP.m in Sources */ = {isa = PBXBuildFile; fileRef = B599FF2B185A7ED000057DD6 /* NLTCP.m */; };
+		7B4D218B1BF7D43D00E41A1C /* NLUDP.m in Sources */ = {isa = PBXBuildFile; fileRef = B5417310189415C000B6636B /* NLUDP.m */; };
+		7B4D218C1BF7D43D00E41A1C /* NLHTTPParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B56DEFBD187DC18100FF1D8A /* NLHTTPParser.m */; };
+		7B4D218D1BF7D43D00E41A1C /* NLCares.m in Sources */ = {isa = PBXBuildFile; fileRef = B5061A391815A9B00083AB4B /* NLCares.m */; };
+		7B4D21961BF7D4A000E41A1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4D21951BF7D4A000E41A1C /* AppDelegate.m */; };
+		7B4D21991BF7D4A000E41A1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4D21981BF7D4A000E41A1C /* main.m */; };
+		7B4D21DD1BF7D4DD00E41A1C /* nodelike.js in Resources */ = {isa = PBXBuildFile; fileRef = B5C9F31A18949011008B8EB2 /* nodelike.js */; };
+		7B4D21DE1BF7D4DD00E41A1C /* _debugger.js in Resources */ = {isa = PBXBuildFile; fileRef = B541732E189438CC00B6636B /* _debugger.js */; };
+		7B4D21DF1BF7D4DD00E41A1C /* _http_agent.js in Resources */ = {isa = PBXBuildFile; fileRef = B541732F189438CC00B6636B /* _http_agent.js */; };
+		7B4D21E01BF7D4DD00E41A1C /* _http_client.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417330189438CC00B6636B /* _http_client.js */; };
+		7B4D21E11BF7D4DD00E41A1C /* _http_common.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417331189438CC00B6636B /* _http_common.js */; };
+		7B4D21E21BF7D4DD00E41A1C /* _http_incoming.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417332189438CC00B6636B /* _http_incoming.js */; };
+		7B4D21E31BF7D4DD00E41A1C /* _http_outgoing.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417333189438CC00B6636B /* _http_outgoing.js */; };
+		7B4D21E41BF7D4DD00E41A1C /* _http_server.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417334189438CC00B6636B /* _http_server.js */; };
+		7B4D21E51BF7D4DD00E41A1C /* _linklist.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417335189438CC00B6636B /* _linklist.js */; };
+		7B4D21E61BF7D4DD00E41A1C /* _stream_duplex.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417336189438CC00B6636B /* _stream_duplex.js */; };
+		7B4D21E71BF7D4DD00E41A1C /* _stream_passthrough.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417337189438CC00B6636B /* _stream_passthrough.js */; };
+		7B4D21E81BF7D4DD00E41A1C /* _stream_readable.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417338189438CC00B6636B /* _stream_readable.js */; };
+		7B4D21E91BF7D4DD00E41A1C /* _stream_transform.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417339189438CC00B6636B /* _stream_transform.js */; };
+		7B4D21EA1BF7D4DD00E41A1C /* _stream_writable.js in Resources */ = {isa = PBXBuildFile; fileRef = B541733A189438CC00B6636B /* _stream_writable.js */; };
+		7B4D21EB1BF7D4DD00E41A1C /* _tls_legacy.js in Resources */ = {isa = PBXBuildFile; fileRef = B541733B189438CC00B6636B /* _tls_legacy.js */; };
+		7B4D21EC1BF7D4DD00E41A1C /* _tls_wrap.js in Resources */ = {isa = PBXBuildFile; fileRef = B541733C189438CC00B6636B /* _tls_wrap.js */; };
+		7B4D21ED1BF7D4DD00E41A1C /* assert.js in Resources */ = {isa = PBXBuildFile; fileRef = B541733D189438CC00B6636B /* assert.js */; };
+		7B4D21EE1BF7D4DD00E41A1C /* buffer.js in Resources */ = {isa = PBXBuildFile; fileRef = B541733E189438CC00B6636B /* buffer.js */; };
+		7B4D21EF1BF7D4DD00E41A1C /* child_process.js in Resources */ = {isa = PBXBuildFile; fileRef = B541733F189438CC00B6636B /* child_process.js */; };
+		7B4D21F01BF7D4DD00E41A1C /* cluster.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417340189438CC00B6636B /* cluster.js */; };
+		7B4D21F11BF7D4DD00E41A1C /* console.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417341189438CC00B6636B /* console.js */; };
+		7B4D21F21BF7D4DD00E41A1C /* constants.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417342189438CC00B6636B /* constants.js */; };
+		7B4D21F31BF7D4DD00E41A1C /* crypto.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417343189438CC00B6636B /* crypto.js */; };
+		7B4D21F41BF7D4DD00E41A1C /* dgram.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417344189438CC00B6636B /* dgram.js */; };
+		7B4D21F51BF7D4DD00E41A1C /* dns.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417345189438CC00B6636B /* dns.js */; };
+		7B4D21F61BF7D4DD00E41A1C /* domain.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417346189438CC00B6636B /* domain.js */; };
+		7B4D21F71BF7D4DD00E41A1C /* events.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417347189438CC00B6636B /* events.js */; };
+		7B4D21F81BF7D4DD00E41A1C /* freelist.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417348189438CC00B6636B /* freelist.js */; };
+		7B4D21F91BF7D4DD00E41A1C /* fs.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417349189438CC00B6636B /* fs.js */; };
+		7B4D21FA1BF7D4DD00E41A1C /* http.js in Resources */ = {isa = PBXBuildFile; fileRef = B541734A189438CC00B6636B /* http.js */; };
+		7B4D21FB1BF7D4DD00E41A1C /* https.js in Resources */ = {isa = PBXBuildFile; fileRef = B541734B189438CC00B6636B /* https.js */; };
+		7B4D21FC1BF7D4DD00E41A1C /* module.js in Resources */ = {isa = PBXBuildFile; fileRef = B541734C189438CC00B6636B /* module.js */; };
+		7B4D21FD1BF7D4DD00E41A1C /* net.js in Resources */ = {isa = PBXBuildFile; fileRef = B541734D189438CC00B6636B /* net.js */; };
+		7B4D21FE1BF7D4DD00E41A1C /* os.js in Resources */ = {isa = PBXBuildFile; fileRef = B541734E189438CC00B6636B /* os.js */; };
+		7B4D21FF1BF7D4DD00E41A1C /* path.js in Resources */ = {isa = PBXBuildFile; fileRef = B541734F189438CC00B6636B /* path.js */; };
+		7B4D22001BF7D4DD00E41A1C /* punycode.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417350189438CC00B6636B /* punycode.js */; };
+		7B4D22011BF7D4DD00E41A1C /* querystring.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417351189438CC00B6636B /* querystring.js */; };
+		7B4D22021BF7D4DD00E41A1C /* readline.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417352189438CC00B6636B /* readline.js */; };
+		7B4D22031BF7D4DD00E41A1C /* repl.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417353189438CC00B6636B /* repl.js */; };
+		7B4D22041BF7D4DD00E41A1C /* smalloc.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417354189438CC00B6636B /* smalloc.js */; };
+		7B4D22051BF7D4DD00E41A1C /* stream.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417355189438CC00B6636B /* stream.js */; };
+		7B4D22061BF7D4DD00E41A1C /* string_decoder.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417356189438CC00B6636B /* string_decoder.js */; };
+		7B4D22071BF7D4DD00E41A1C /* sys.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417357189438CC00B6636B /* sys.js */; };
+		7B4D22081BF7D4DD00E41A1C /* timers.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417358189438CC00B6636B /* timers.js */; };
+		7B4D22091BF7D4DD00E41A1C /* tls.js in Resources */ = {isa = PBXBuildFile; fileRef = B5417359189438CC00B6636B /* tls.js */; };
+		7B4D220A1BF7D4DD00E41A1C /* tty.js in Resources */ = {isa = PBXBuildFile; fileRef = B541735A189438CC00B6636B /* tty.js */; };
+		7B4D220B1BF7D4DD00E41A1C /* url.js in Resources */ = {isa = PBXBuildFile; fileRef = B541735B189438CC00B6636B /* url.js */; };
+		7B4D220C1BF7D4DD00E41A1C /* util.js in Resources */ = {isa = PBXBuildFile; fileRef = B541735C189438CC00B6636B /* util.js */; };
+		7B4D220D1BF7D4DD00E41A1C /* vm.js in Resources */ = {isa = PBXBuildFile; fileRef = B541735D189438CC00B6636B /* vm.js */; };
+		7B4D220E1BF7D4DD00E41A1C /* zlib.js in Resources */ = {isa = PBXBuildFile; fileRef = B541735E189438CC00B6636B /* zlib.js */; };
+		7B4D220F1BF7D4F100E41A1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B4D219A1BF7D4A000E41A1C /* Assets.xcassets */; };
+		7B4D22101BF7D4F100E41A1C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B4D219C1BF7D4A000E41A1C /* MainMenu.xib */; };
+		7B4D22131BF7D4FD00E41A1C /* nodelike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4D21571BF7D42000E41A1C /* nodelike.framework */; };
+		7B4D22141BF7D57B00E41A1C /* NSObject+Nodelike.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A79B29189E4F9400CC04D6 /* NSObject+Nodelike.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22151BF7D57B00E41A1C /* NLAsync.h in Headers */ = {isa = PBXBuildFile; fileRef = B52B9B9118A01D0800492856 /* NLAsync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22161BF7D57B00E41A1C /* NLContextify.h in Headers */ = {isa = PBXBuildFile; fileRef = B5A79B2C189E501200CC04D6 /* NLContextify.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22171BF7D57B00E41A1C /* NLContext.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5F98181F07270093A6FF /* NLContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22181BF7D57B00E41A1C /* NLNatives.h in Headers */ = {isa = PBXBuildFile; fileRef = B578842518945E9900EA1A81 /* NLNatives.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22191BF7D57B00E41A1C /* NLProcess.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5F9B181F07320093A6FF /* NLProcess.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D221A1BF7D57B00E41A1C /* NLBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5F9E181F073D0093A6FF /* NLBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D221B1BF7D57B00E41A1C /* NLFS.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5F92181F07090093A6FF /* NLFS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D221C1BF7D57B00E41A1C /* NLConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5FA1181F07480093A6FF /* NLConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D221D1BF7D57B00E41A1C /* NLSmalloc.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C5B247181319550091FDE8 /* NLSmalloc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D221E1BF7D57B00E41A1C /* NLBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C5B24A181321300091FDE8 /* NLBuffer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D221F1BF7D57B00E41A1C /* NLUV.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5F89181EC45A0093A6FF /* NLUV.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22201BF7D57B00E41A1C /* NLHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5F8F181EE3590093A6FF /* NLHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22211BF7D57B00E41A1C /* NLTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = B59E5FA41820EF530093A6FF /* NLTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22221BF7D57B00E41A1C /* NLStream.h in Headers */ = {isa = PBXBuildFile; fileRef = B53E6996184672F3004E4EF9 /* NLStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22231BF7D57B00E41A1C /* NLTCP.h in Headers */ = {isa = PBXBuildFile; fileRef = B599FF2A185A7ED000057DD6 /* NLTCP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22241BF7D57B00E41A1C /* NLUDP.h in Headers */ = {isa = PBXBuildFile; fileRef = B541730F189415C000B6636B /* NLUDP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22251BF7D57B00E41A1C /* NLHTTPParser.h in Headers */ = {isa = PBXBuildFile; fileRef = B56DEFBC187DC18100FF1D8A /* NLHTTPParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22261BF7D57B00E41A1C /* NLCares.h in Headers */ = {isa = PBXBuildFile; fileRef = B5061A381815A9B00083AB4B /* NLCares.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22271BF7D57B00E41A1C /* nodelike.h in Headers */ = {isa = PBXBuildFile; fileRef = B59EA093180CB587005BF5C1 /* nodelike.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B4D22291BF7D7EE00E41A1C /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4D22281BF7D7EE00E41A1C /* JavaScriptCore.framework */; };
+		7B4D222A1BF7D7F600E41A1C /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4D22281BF7D7EE00E41A1C /* JavaScriptCore.framework */; };
 		B5061A3A1815A9B00083AB4B /* NLCares.m in Sources */ = {isa = PBXBuildFile; fileRef = B5061A391815A9B00083AB4B /* NLCares.m */; };
 		B52B8143186075CD003B40D9 /* fs-poll.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8117186075CD003B40D9 /* fs-poll.c */; };
 		B52B8144186075CD003B40D9 /* inet.c in Sources */ = {isa = PBXBuildFile; fileRef = B52B8118186075CD003B40D9 /* inet.c */; };
@@ -95,7 +220,6 @@
 		B541738F189438DC00B6636B /* zlib.js in Resources */ = {isa = PBXBuildFile; fileRef = B541735E189438CC00B6636B /* zlib.js */; };
 		B54C1F53180D37280051F826 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5B44642180AB78E009ADEF9 /* Foundation.framework */; };
 		B54C1F94180D37810051F826 /* libuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C1F52180D37280051F826 /* libuv.a */; };
-		B54C1F96180D37C80051F826 /* libm.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B54C1F95180D37C80051F826 /* libm.dylib */; };
 		B56DEFB6187DBFA700FF1D8A /* http_parser.c in Sources */ = {isa = PBXBuildFile; fileRef = B56DEFA8187DBFA700FF1D8A /* http_parser.c */; };
 		B56DEFBE187DC18100FF1D8A /* NLHTTPParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B56DEFBD187DC18100FF1D8A /* NLHTTPParser.m */; };
 		B578842418944F2000EA1A81 /* NLBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B578842318944F2000EA1A81 /* NLBuffer.m */; };
@@ -127,6 +251,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7B4D22111BF7D4F700E41A1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5B44637180AB78E009ADEF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B4D21561BF7D42000E41A1C;
+			remoteInfo = nodelike;
+		};
 		B54173251894341600B6636B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5B44637180AB78E009ADEF9 /* Project object */;
@@ -144,6 +275,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B4D21501BF7D35D00E41A1C /* libm.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libm.tbd; path = usr/lib/libm.tbd; sourceTree = SDKROOT; };
+		7B4D21571BF7D42000E41A1C /* nodelike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = nodelike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4D21591BF7D42100E41A1C /* nodelike.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nodelike.h; sourceTree = "<group>"; };
+		7B4D215B1BF7D42100E41A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4D21921BF7D4A000E41A1C /* nodish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nodish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4D21941BF7D4A000E41A1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7B4D21951BF7D4A000E41A1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7B4D21981BF7D4A000E41A1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B4D219A1BF7D4A000E41A1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B4D219D1BF7D4A000E41A1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7B4D219F1BF7D4A000E41A1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B4D22281BF7D7EE00E41A1C /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		B5061A381815A9B00083AB4B /* NLCares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLCares.h; sourceTree = "<group>"; };
 		B5061A391815A9B00083AB4B /* NLCares.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NLCares.m; sourceTree = "<group>"; };
 		B52B810D18607587003B40D9 /* tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tree.h; path = libuv/include/tree.h; sourceTree = SOURCE_ROOT; };
@@ -276,7 +419,7 @@
 		B59EA04F180CB38E005BF5C1 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		B59EA08E180CB587005BF5C1 /* libNodelike.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libNodelike.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B59EA092180CB587005BF5C1 /* Nodelike-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Nodelike-Prefix.pch"; sourceTree = "<group>"; };
-		B59EA093180CB587005BF5C1 /* Nodelike.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Nodelike.h; sourceTree = "<group>"; };
+		B59EA093180CB587005BF5C1 /* nodelike.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = nodelike.h; sourceTree = "<group>"; };
 		B5A79B29189E4F9400CC04D6 /* NSObject+Nodelike.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Nodelike.h"; sourceTree = "<group>"; };
 		B5A79B2A189E4F9400CC04D6 /* NSObject+Nodelike.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Nodelike.m"; sourceTree = "<group>"; };
 		B5A79B2C189E501200CC04D6 /* NLContextify.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NLContextify.h; sourceTree = "<group>"; };
@@ -298,6 +441,23 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7B4D21531BF7D42000E41A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4D22291BF7D7EE00E41A1C /* JavaScriptCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4D218F1BF7D4A000E41A1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4D222A1BF7D7F600E41A1C /* JavaScriptCore.framework in Frameworks */,
+				7B4D22131BF7D4FD00E41A1C /* nodelike.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B54173131894341600B6636B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,7 +473,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54C1F96180D37C80051F826 /* libm.dylib in Frameworks */,
 				B54C1F53180D37280051F826 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +490,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B4D21581BF7D42100E41A1C /* nodelike */ = {
+			isa = PBXGroup;
+			children = (
+				7B4D21591BF7D42100E41A1C /* nodelike.h */,
+				7B4D215B1BF7D42100E41A1C /* Info.plist */,
+			);
+			path = nodelike;
+			sourceTree = "<group>";
+		};
+		7B4D21931BF7D4A000E41A1C /* nodish */ = {
+			isa = PBXGroup;
+			children = (
+				7B4D21941BF7D4A000E41A1C /* AppDelegate.h */,
+				7B4D21951BF7D4A000E41A1C /* AppDelegate.m */,
+				7B4D219A1BF7D4A000E41A1C /* Assets.xcassets */,
+				7B4D219C1BF7D4A000E41A1C /* MainMenu.xib */,
+				7B4D219F1BF7D4A000E41A1C /* Info.plist */,
+				7B4D21971BF7D4A000E41A1C /* Supporting Files */,
+			);
+			path = nodish;
+			sourceTree = "<group>";
+		};
+		7B4D21971BF7D4A000E41A1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B4D21981BF7D4A000E41A1C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B52B810A18607575003B40D9 /* include */ = {
 			isa = PBXGroup;
 			children = (
@@ -519,7 +708,7 @@
 				B56DEFBD187DC18100FF1D8A /* NLHTTPParser.m */,
 				B5061A381815A9B00083AB4B /* NLCares.h */,
 				B5061A391815A9B00083AB4B /* NLCares.m */,
-				B59EA093180CB587005BF5C1 /* Nodelike.h */,
+				B59EA093180CB587005BF5C1 /* nodelike.h */,
 				B59EA091180CB587005BF5C1 /* Supporting Files */,
 			);
 			path = Nodelike;
@@ -541,6 +730,8 @@
 				B5D9EC4B183A342400E321A0 /* libuv */,
 				B59EA090180CB587005BF5C1 /* Nodelike */,
 				B541731C1894341600B6636B /* Nodelike Tests */,
+				7B4D21581BF7D42100E41A1C /* nodelike */,
+				7B4D21931BF7D4A000E41A1C /* nodish */,
 				B5B44641180AB78E009ADEF9 /* Frameworks */,
 				B5B44640180AB78E009ADEF9 /* Products */,
 			);
@@ -552,6 +743,8 @@
 				B59EA08E180CB587005BF5C1 /* libNodelike.a */,
 				B54C1F52180D37280051F826 /* libuv.a */,
 				B54173161894341600B6636B /* Nodelike Tests.xctest */,
+				7B4D21571BF7D42000E41A1C /* nodelike.framework */,
+				7B4D21921BF7D4A000E41A1C /* nodish.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -559,6 +752,8 @@
 		B5B44641180AB78E009ADEF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B4D22281BF7D7EE00E41A1C /* JavaScriptCore.framework */,
+				7B4D21501BF7D35D00E41A1C /* libm.tbd */,
 				B54C1F95180D37C80051F826 /* libm.dylib */,
 				B59EA04F180CB38E005BF5C1 /* JavaScriptCore.framework */,
 				B5B44642180AB78E009ADEF9 /* Foundation.framework */,
@@ -596,7 +791,74 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		7B4D21541BF7D42000E41A1C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4D221F1BF7D57B00E41A1C /* NLUV.h in Headers */,
+				7B4D221B1BF7D57B00E41A1C /* NLFS.h in Headers */,
+				7B4D215A1BF7D42100E41A1C /* nodelike.h in Headers */,
+				7B4D221C1BF7D57B00E41A1C /* NLConstants.h in Headers */,
+				7B4D22181BF7D57B00E41A1C /* NLNatives.h in Headers */,
+				7B4D22141BF7D57B00E41A1C /* NSObject+Nodelike.h in Headers */,
+				7B4D22221BF7D57B00E41A1C /* NLStream.h in Headers */,
+				7B4D22191BF7D57B00E41A1C /* NLProcess.h in Headers */,
+				7B4D22271BF7D57B00E41A1C /* nodelike.h in Headers */,
+				7B4D22151BF7D57B00E41A1C /* NLAsync.h in Headers */,
+				7B4D22211BF7D57B00E41A1C /* NLTimer.h in Headers */,
+				7B4D22231BF7D57B00E41A1C /* NLTCP.h in Headers */,
+				7B4D22161BF7D57B00E41A1C /* NLContextify.h in Headers */,
+				7B4D22241BF7D57B00E41A1C /* NLUDP.h in Headers */,
+				7B4D221E1BF7D57B00E41A1C /* NLBuffer.h in Headers */,
+				7B4D221D1BF7D57B00E41A1C /* NLSmalloc.h in Headers */,
+				7B4D22261BF7D57B00E41A1C /* NLCares.h in Headers */,
+				7B4D22251BF7D57B00E41A1C /* NLHTTPParser.h in Headers */,
+				7B4D221A1BF7D57B00E41A1C /* NLBinding.h in Headers */,
+				7B4D22201BF7D57B00E41A1C /* NLHandle.h in Headers */,
+				7B4D22171BF7D57B00E41A1C /* NLContext.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		7B4D21561BF7D42000E41A1C /* nodelike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4D215C1BF7D42100E41A1C /* Build configuration list for PBXNativeTarget "nodelike" */;
+			buildPhases = (
+				7B4D21521BF7D42000E41A1C /* Sources */,
+				7B4D21531BF7D42000E41A1C /* Frameworks */,
+				7B4D21541BF7D42000E41A1C /* Headers */,
+				7B4D21551BF7D42000E41A1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nodelike;
+			productName = nodelike;
+			productReference = 7B4D21571BF7D42000E41A1C /* nodelike.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7B4D21911BF7D4A000E41A1C /* nodish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4D21A01BF7D4A000E41A1C /* Build configuration list for PBXNativeTarget "nodish" */;
+			buildPhases = (
+				7B4D218E1BF7D4A000E41A1C /* Sources */,
+				7B4D218F1BF7D4A000E41A1C /* Frameworks */,
+				7B4D21901BF7D4A000E41A1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B4D22121BF7D4F700E41A1C /* PBXTargetDependency */,
+			);
+			name = nodish;
+			productName = nodish;
+			productReference = 7B4D21921BF7D4A000E41A1C /* nodish.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B54173151894341600B6636B /* Nodelike Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B54173271894341600B6636B /* Build configuration list for PBXNativeTarget "Nodelike Tests" */;
@@ -657,9 +919,15 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = NL;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Sam Rijs";
 				TargetAttributes = {
+					7B4D21561BF7D42000E41A1C = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					7B4D21911BF7D4A000E41A1C = {
+						CreatedOnToolsVersion = 7.1;
+					};
 					B54173151894341600B6636B = {
 						TestTargetID = B59EA08D180CB587005BF5C1;
 					};
@@ -681,11 +949,79 @@
 				B59EA08D180CB587005BF5C1 /* Nodelike */,
 				B54C1F51180D37280051F826 /* uv */,
 				B54173151894341600B6636B /* Nodelike Tests */,
+				7B4D21561BF7D42000E41A1C /* nodelike */,
+				7B4D21911BF7D4A000E41A1C /* nodish */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7B4D21551BF7D42000E41A1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4D21901BF7D4A000E41A1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4D220F1BF7D4F100E41A1C /* Assets.xcassets in Resources */,
+				7B4D22101BF7D4F100E41A1C /* MainMenu.xib in Resources */,
+				7B4D21DD1BF7D4DD00E41A1C /* nodelike.js in Resources */,
+				7B4D21DE1BF7D4DD00E41A1C /* _debugger.js in Resources */,
+				7B4D21DF1BF7D4DD00E41A1C /* _http_agent.js in Resources */,
+				7B4D21E01BF7D4DD00E41A1C /* _http_client.js in Resources */,
+				7B4D21E11BF7D4DD00E41A1C /* _http_common.js in Resources */,
+				7B4D21E21BF7D4DD00E41A1C /* _http_incoming.js in Resources */,
+				7B4D21E31BF7D4DD00E41A1C /* _http_outgoing.js in Resources */,
+				7B4D21E41BF7D4DD00E41A1C /* _http_server.js in Resources */,
+				7B4D21E51BF7D4DD00E41A1C /* _linklist.js in Resources */,
+				7B4D21E61BF7D4DD00E41A1C /* _stream_duplex.js in Resources */,
+				7B4D21E71BF7D4DD00E41A1C /* _stream_passthrough.js in Resources */,
+				7B4D21E81BF7D4DD00E41A1C /* _stream_readable.js in Resources */,
+				7B4D21E91BF7D4DD00E41A1C /* _stream_transform.js in Resources */,
+				7B4D21EA1BF7D4DD00E41A1C /* _stream_writable.js in Resources */,
+				7B4D21EB1BF7D4DD00E41A1C /* _tls_legacy.js in Resources */,
+				7B4D21EC1BF7D4DD00E41A1C /* _tls_wrap.js in Resources */,
+				7B4D21ED1BF7D4DD00E41A1C /* assert.js in Resources */,
+				7B4D21EE1BF7D4DD00E41A1C /* buffer.js in Resources */,
+				7B4D21EF1BF7D4DD00E41A1C /* child_process.js in Resources */,
+				7B4D21F01BF7D4DD00E41A1C /* cluster.js in Resources */,
+				7B4D21F11BF7D4DD00E41A1C /* console.js in Resources */,
+				7B4D21F21BF7D4DD00E41A1C /* constants.js in Resources */,
+				7B4D21F31BF7D4DD00E41A1C /* crypto.js in Resources */,
+				7B4D21F41BF7D4DD00E41A1C /* dgram.js in Resources */,
+				7B4D21F51BF7D4DD00E41A1C /* dns.js in Resources */,
+				7B4D21F61BF7D4DD00E41A1C /* domain.js in Resources */,
+				7B4D21F71BF7D4DD00E41A1C /* events.js in Resources */,
+				7B4D21F81BF7D4DD00E41A1C /* freelist.js in Resources */,
+				7B4D21F91BF7D4DD00E41A1C /* fs.js in Resources */,
+				7B4D21FA1BF7D4DD00E41A1C /* http.js in Resources */,
+				7B4D21FB1BF7D4DD00E41A1C /* https.js in Resources */,
+				7B4D21FC1BF7D4DD00E41A1C /* module.js in Resources */,
+				7B4D21FD1BF7D4DD00E41A1C /* net.js in Resources */,
+				7B4D21FE1BF7D4DD00E41A1C /* os.js in Resources */,
+				7B4D21FF1BF7D4DD00E41A1C /* path.js in Resources */,
+				7B4D22011BF7D4DD00E41A1C /* querystring.js in Resources */,
+				7B4D22021BF7D4DD00E41A1C /* readline.js in Resources */,
+				7B4D22031BF7D4DD00E41A1C /* repl.js in Resources */,
+				7B4D22041BF7D4DD00E41A1C /* smalloc.js in Resources */,
+				7B4D22051BF7D4DD00E41A1C /* stream.js in Resources */,
+				7B4D22061BF7D4DD00E41A1C /* string_decoder.js in Resources */,
+				7B4D22071BF7D4DD00E41A1C /* sys.js in Resources */,
+				7B4D22081BF7D4DD00E41A1C /* timers.js in Resources */,
+				7B4D22091BF7D4DD00E41A1C /* tls.js in Resources */,
+				7B4D220A1BF7D4DD00E41A1C /* tty.js in Resources */,
+				7B4D220B1BF7D4DD00E41A1C /* url.js in Resources */,
+				7B4D22001BF7D4DD00E41A1C /* punycode.js in Resources */,
+				7B4D220C1BF7D4DD00E41A1C /* util.js in Resources */,
+				7B4D220D1BF7D4DD00E41A1C /* vm.js in Resources */,
+				7B4D220E1BF7D4DD00E41A1C /* zlib.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B54173141894341600B6636B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -780,6 +1116,69 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7B4D21521BF7D42000E41A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4D217B1BF7D43D00E41A1C /* NSObject+Nodelike.m in Sources */,
+				7B4D217C1BF7D43D00E41A1C /* NLAsync.m in Sources */,
+				7B4D217D1BF7D43D00E41A1C /* NLContextify.m in Sources */,
+				7B4D217E1BF7D43D00E41A1C /* NLContext.m in Sources */,
+				7B4D217F1BF7D43D00E41A1C /* NLNatives.m in Sources */,
+				7B4D21801BF7D43D00E41A1C /* NLProcess.m in Sources */,
+				7B4D21811BF7D43D00E41A1C /* NLBinding.m in Sources */,
+				7B4D21821BF7D43D00E41A1C /* NLFS.m in Sources */,
+				7B4D21831BF7D43D00E41A1C /* NLConstants.m in Sources */,
+				7B4D21841BF7D43D00E41A1C /* NLSmalloc.m in Sources */,
+				7B4D21851BF7D43D00E41A1C /* NLBuffer.m in Sources */,
+				7B4D21861BF7D43D00E41A1C /* NLUV.m in Sources */,
+				7B4D21871BF7D43D00E41A1C /* NLHandle.m in Sources */,
+				7B4D21881BF7D43D00E41A1C /* NLTimer.m in Sources */,
+				7B4D21891BF7D43D00E41A1C /* NLStream.m in Sources */,
+				7B4D218A1BF7D43D00E41A1C /* NLTCP.m in Sources */,
+				7B4D218B1BF7D43D00E41A1C /* NLUDP.m in Sources */,
+				7B4D218C1BF7D43D00E41A1C /* NLHTTPParser.m in Sources */,
+				7B4D218D1BF7D43D00E41A1C /* NLCares.m in Sources */,
+				7B4D21711BF7D43100E41A1C /* signal.c in Sources */,
+				7B4D215F1BF7D43100E41A1C /* http_parser.c in Sources */,
+				7B4D21601BF7D43100E41A1C /* fs-poll.c in Sources */,
+				7B4D21611BF7D43100E41A1C /* inet.c in Sources */,
+				7B4D21621BF7D43100E41A1C /* async.c in Sources */,
+				7B4D21631BF7D43100E41A1C /* core.c in Sources */,
+				7B4D21641BF7D43100E41A1C /* darwin-proctitle.c in Sources */,
+				7B4D21651BF7D43100E41A1C /* darwin.c in Sources */,
+				7B4D21661BF7D43100E41A1C /* dl.c in Sources */,
+				7B4D21671BF7D43100E41A1C /* fs.c in Sources */,
+				7B4D21681BF7D43100E41A1C /* fsevents.c in Sources */,
+				7B4D21691BF7D43100E41A1C /* getaddrinfo.c in Sources */,
+				7B4D216A1BF7D43100E41A1C /* kqueue.c in Sources */,
+				7B4D216B1BF7D43100E41A1C /* loop-watcher.c in Sources */,
+				7B4D216C1BF7D43100E41A1C /* loop.c in Sources */,
+				7B4D216D1BF7D43100E41A1C /* pipe.c in Sources */,
+				7B4D216E1BF7D43100E41A1C /* poll.c in Sources */,
+				7B4D216F1BF7D43100E41A1C /* process.c in Sources */,
+				7B4D21701BF7D43100E41A1C /* proctitle.c in Sources */,
+				7B4D21721BF7D43100E41A1C /* stream.c in Sources */,
+				7B4D21731BF7D43100E41A1C /* tcp.c in Sources */,
+				7B4D21741BF7D43100E41A1C /* thread.c in Sources */,
+				7B4D21751BF7D43100E41A1C /* threadpool.c in Sources */,
+				7B4D21761BF7D43100E41A1C /* timer.c in Sources */,
+				7B4D21771BF7D43100E41A1C /* tty.c in Sources */,
+				7B4D21781BF7D43100E41A1C /* udp.c in Sources */,
+				7B4D21791BF7D43100E41A1C /* uv-common.c in Sources */,
+				7B4D217A1BF7D43100E41A1C /* version.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B4D218E1BF7D4A000E41A1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4D21991BF7D4A000E41A1C /* main.m in Sources */,
+				7B4D21961BF7D4A000E41A1C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B54173121894341600B6636B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -852,6 +1251,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7B4D22121BF7D4F700E41A1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B4D21561BF7D42000E41A1C /* nodelike */;
+			targetProxy = 7B4D22111BF7D4F700E41A1C /* PBXContainerItemProxy */;
+		};
 		B54173261894341600B6636B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B59EA08D180CB587005BF5C1 /* Nodelike */;
@@ -865,6 +1269,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7B4D219C1BF7D4A000E41A1C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B4D219D1BF7D4A000E41A1C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		B541731F1894341600B6636B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -876,10 +1288,122 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7B4D215D1BF7D42100E41A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = nodelike/Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrgray.nodelike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7B4D215E1BF7D42100E41A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = /;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = nodelike/Info.plist;
+				INSTALL_PATH = "$(USER_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrgray.nodelike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7B4D21A11BF7D4A000E41A1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(USER_LIBRARY_DIR)/Frameworks";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = nodish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrgray.nodish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7B4D21A21BF7D4A000E41A1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(USER_LIBRARY_DIR)/Frameworks";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = nodish/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mrgray.nodish;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 		B54173281894341600B6636B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -892,6 +1416,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Nodelike Tests/Nodelike Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.nodeapp.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -900,7 +1425,6 @@
 		B54173291894341600B6636B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -909,6 +1433,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Nodelike Tests/Nodelike Tests-Prefix.pch";
 				INFOPLIST_FILE = "Nodelike Tests/Nodelike Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.nodeapp.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -922,7 +1447,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lm",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -932,7 +1460,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/uv.dst;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lm",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -970,7 +1501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -983,8 +1514,10 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: alex@mrgray.com (938J34NGN8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: alex@mrgray.com (938J34NGN8)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1009,7 +1542,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -1022,7 +1555,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: alex@mrgray.com (938J34NGN8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: alex@mrgray.com (938J34NGN8)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1041,6 +1575,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7B4D215C1BF7D42100E41A1C /* Build configuration list for PBXNativeTarget "nodelike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4D215D1BF7D42100E41A1C /* Debug */,
+				7B4D215E1BF7D42100E41A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7B4D21A01BF7D4A000E41A1C /* Build configuration list for PBXNativeTarget "nodish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4D21A11BF7D4A000E41A1C /* Debug */,
+				7B4D21A21BF7D4A000E41A1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		B54173271894341600B6636B /* Build configuration list for PBXNativeTarget "Nodelike Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
