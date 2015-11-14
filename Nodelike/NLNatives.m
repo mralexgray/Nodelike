@@ -24,18 +24,24 @@
 }
 
 + (NSArray *)modules {
-    NSArray *files = [NSBundle pathsForResourcesOfType:@"js" inDirectory:self.bundle.bundlePath];
+
+
+      NSArray *files = [self.bundle pathsForResourcesOfType:@"js" inDirectory:nil];
+//    [NSBundle pathsForResourcesOfType:@"js" inDirectory:self.bundle.bundlePath];
     NSMutableArray *modules = [NSMutableArray new];
     for (int i = 0; i < files.count; i++) {
         NSURL    *url  = files[i];
         NSString *name = [url.lastPathComponent substringToIndex:url.lastPathComponent.length - url.pathExtension.length - 1];
         [modules addObject:name];
     }
+    NSLog(@"modules %@", modules);
     return modules;
 }
 
 + (NSString *)source:(NSString *)module {
-    NSString *path    = [self.bundle pathForResource:module ofType:@"js"];
+
+    NSString *path    =// [self.bundle.bundlePath stringByAppendingFormat:@"/lib/%@.js", module];
+     [self.bundle pathForResource:module ofType:@"js" inDirectory:nil];
     NSString *content = [NSString stringWithContentsOfFile:path
                                                   encoding:NSUTF8StringEncoding
                                                      error:nil];

@@ -57,7 +57,7 @@
     } inContext:context];
     
     // used in Hrtime() below
-#define NANOS_PER_SEC 1000000000
+#define NANOS_PER_SEC ((unsigned int)1000000000)
 
     // hrtime exposes libuv's uv_hrtime() high-resolution timer.
     // The value returned by uv_hrtime() is a 64-bit int representing nanoseconds,
@@ -72,7 +72,7 @@
             uint64_t nanos   = [offset valueAtIndex:1].toInt32;
             t -= (seconds * NANOS_PER_SEC) + nanos;
         }
-        return @[[NSNumber numberWithUnsignedInt:t / NANOS_PER_SEC], [NSNumber numberWithUnsignedInt:t % NANOS_PER_SEC]];
+        return @[[NSNumber numberWithUnsignedLong:t / NANOS_PER_SEC], [NSNumber numberWithUnsignedLong:t % NANOS_PER_SEC]];
     };
     
     process[@"reallyExit"] = ^(NSNumber *code) {
