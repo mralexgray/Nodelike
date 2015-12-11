@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "7780E198A46684277B6C53D1786393EB194B54A1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "43CC97A09591B8B59BDB5B93BBF5185246275418" : 0,
+    "90C3FD88F8002F902A5FDF9D64063244571F233C" : 0,
+    "7780E198A46684277B6C53D1786393EB194B54A1" : 0,
+    "BC09C09DC2853BA9B3A84860F78F2E9FD790D8C3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D4D9F764-591F-4CB1-9EA5-11BF79817A40",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "43CC97A09591B8B59BDB5B93BBF5185246275418" : "..\/..\/AtoZ.framework\/AtoZUniversal\/Vendor\/_ObjC\/Universal",
+    "90C3FD88F8002F902A5FDF9D64063244571F233C" : "Nodelike\/http-parser\/",
+    "7780E198A46684277B6C53D1786393EB194B54A1" : "Nodelike\/",
+    "BC09C09DC2853BA9B3A84860F78F2E9FD790D8C3" : "Nodelike\/libuv\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Nodelike",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Nodelike.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mralexgray\/Universal.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "43CC97A09591B8B59BDB5B93BBF5185246275418"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/node-app\/Nodelike.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7780E198A46684277B6C53D1786393EB194B54A1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joyent\/http-parser.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "90C3FD88F8002F902A5FDF9D64063244571F233C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joyent\/libuv.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BC09C09DC2853BA9B3A84860F78F2E9FD790D8C3"
+    }
+  ]
+}

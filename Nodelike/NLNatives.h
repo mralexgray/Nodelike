@@ -16,5 +16,6 @@
 + (NSBundle *)bundle;
 + (NSArray *)modules;
 + (NSString *)source:(NSString *)module;
++ (void) loadModule:(NSString*) path;
 
 @end

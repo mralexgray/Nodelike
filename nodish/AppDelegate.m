@@ -35,7 +35,7 @@
     };
     _context[@"console"] = @{@"log": logger, @"error": logger};
     
-    //[_context evaluateScript:@"process.env['NODE_DEBUG']='module'"];
+    [_context evaluateScript:@"process.env['NODE_DEBUG']='module'"];
   return self;
 }
 
@@ -65,9 +65,27 @@
 
 - (void) applicationDidFinishLaunching:(NSNotification *)notification {
 
+
 //  NSLog(@"%@",[NLNatives modules]);
   _runner = NLRunner.new;
-  [_runner executeJS:@"var a = \"apple\"; console.log(Object.keys(process));"];
+
+//  [NLNatives loadModule:@"/node/atoz"];
+
+//  [NLNatives modules];
+
+//  [_runner executeJS:@"var z = require ('chalk');"];
+
+  [_runner executeJS:@"require('atoz'); console.log (require('util').inspect(this));"];
+
+
+
+
+
+
+
+
+//  '/Volumes/Bay3.2_2000_2T/ServiceData/node/foldersize'); console.log (a);"];
+//  [_runner executeJS:@"var a = \"apple\"; console.log(Object.keys(process));"];
 
 //  NSLog(@"%@", );
 

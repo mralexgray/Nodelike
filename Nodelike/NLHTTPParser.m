@@ -24,8 +24,8 @@ static const int num_fields_max = 32;
 
 @implementation NLHTTPParser {
     http_parser parser_;
-    NSMutableData *fields_[num_fields_max];  // header fields
-    NSMutableData *values_[num_fields_max];  // header values
+    NSMutableData *fields_[32];  // header fields
+    NSMutableData *values_[32];  // header values
     NSMutableData *url_;
     NSMutableData *status_message_;
     int num_fields_;
@@ -181,7 +181,7 @@ static const int num_fields_max = 32;
         return;
     
     JSStringRef urlStrRef = JSStringCreateWithCFString((__bridge CFStringRef)url_);
-    
+
     JSValueRef argv[2] = {
         self.headers.JSValueRef,
         JSValueMakeString(ctxRef, urlStrRef)

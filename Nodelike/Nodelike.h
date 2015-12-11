@@ -8,6 +8,7 @@
 
 
 @import Foundation;
+@import JavaScriptCore;
 
 #import "NSObject+Nodelike.h"
 #import "NLAsync.h"
@@ -31,4 +32,15 @@
 #import "Nodelike.h"
 
 
+@interface Nodelike : NSObject
+
+@property NLContext *context;
+
+- (NSString*) executeJS:(NSString *)code;
+
+#if TARGET_OS_IPHONE
+@property UIBackgroundTaskIdentifier backgroundTask;
+#endif
+
+@end
 

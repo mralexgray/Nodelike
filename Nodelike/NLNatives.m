@@ -11,30 +11,33 @@
 
 #import "NLNatives.h"
 
+static NSMutableArray *otherModules;
+
 @implementation NLNatives
 
++ (void) initialize { otherModules = @[].mutableCopy; }
+
+
 + (NSBundle *)bundle {
+
     NSBundle *bundle     = [NSBundle bundleForClass:self.class];
     NSString *bundlePath = [bundle pathForResource:@"Nodelike" ofType:@"bundle"];
-    if (bundlePath) {
-        return [NSBundle bundleWithPath:bundlePath];
-    } else {
-        return bundle;
-    }
+
+    return bundlePath ? [NSBundle bundleWithPath:bundlePath] : bundle;
 }
 
 + (NSArray *)modules {
 
-
-      NSArray *files = [self.bundle pathsForResourcesOfType:@"js" inDirectory:nil];
+    NSMutableArray *files = [self.bundle pathsForResourcesOfType:@"js" inDirectory:nil].mutableCopy;
+    [files addObjectsFromArray:otherModules];
 //    [NSBundle pathsForResourcesOfType:@"js" inDirectory:self.bundle.bundlePath];
-    NSMutableArray *modules = [NSMutableArray new];
-    for (int i = 0; i < files.count; i++) {
-        NSURL    *url  = files[i];
-        NSString *name = [url.lastPathComponent substringToIndex:url.lastPathComponent.length - url.pathExtension.length - 1];
+    NSMutableArray *modules = @[].mutableCopy;
+    for (id thing in files) {
+      NSURL * url = ![thing isKindOfClass:NSString.class] ? thing : [NSURL fileURLWithPath:thing];
+      NSString *name = [[url lastPathComponent] substringToIndex:[url lastPathComponent].length - [url pathExtension].length - 1];
         [modules addObject:name];
     }
-    NSLog(@"modules %@", modules);
+//    NSLog(@"modules %@", modules);
     return modules;
 }
 
@@ -48,7 +51,43 @@
     return content;
 }
 
-+ (id)binding {
++ (void) loadModule:(NSString*) path {
+
+  id pathToLoad = [path.pathExtension isEqualToString:@"js"] ? path : ({
+
+    id json = [path stringByAppendingPathComponent:@"package.json"];
+    [NSFileManager.defaultManager fileExistsAtPath:json] ? ({
+
+      NSLog(@"parsing json: %@", json);
+      NSError * e= nil;
+      NSString *jsonString = [NSString stringWithContentsOfFile:json encoding:NSUTF8StringEncoding error:&e];
+      NSData * jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+
+      id parsedData = [NSJSONSerialization JSONObjectWithData:jsonData options:kNilOptions error:&e];
+
+//      NSLog(@"parsed: %@", parsedData);
+//      id d = [[NSString.alloc initWithContentsOfFile:json encoding:NSUTF8StringEncoding]
+
+
+
+      id main = parsedData[@"main"] ?: [path stringByAppendingPathComponent:@"index.js"];
+      NSLog(@"found main: %@", main);
+      main;
+
+    }) : [path stringByAppendingPathComponent:@"index.js"];
+  });
+
+  JSValue *sources = [JSValue valueWithNewObjectInContext:JSContext.currentContext];
+  [sources defineProperty:[pathToLoad stringByDeletingLastPathComponent]
+                     descriptor:@{ JSPropertyDescriptorGetKey: ^{
+
+      return [NSString.alloc initWithContentsOfFile:pathToLoad encoding:NSUTF8StringEncoding error:nil];
+    }}
+  ];
+
+}
+
++ binding {
     NSArray *modules = [self modules];
     JSValue *sources = [JSValue valueWithNewObjectInContext:JSContext.currentContext];
     for (int i = 0; i < modules.count; i++) {
